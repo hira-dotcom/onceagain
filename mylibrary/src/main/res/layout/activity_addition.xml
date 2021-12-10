@@ -50,6 +50,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_sum"
                 android:layout_marginTop="10dp"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
                 android:text="Addition"/>
 
         </LinearLayout>

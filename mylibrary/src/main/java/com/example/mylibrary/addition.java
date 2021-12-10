@@ -12,6 +12,7 @@ public class addition extends AppCompatActivity {
 
     EditText ed1,ed2;
     Button btn;
+    Double v1,v2,result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,18 +23,16 @@ public class addition extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Double v1,v2;
                 v1 = Double.valueOf(ed1.getText().toString());
                 v2 = Double.valueOf(ed2.getText().toString());
                 if(v1 == null && v2 == null){
-
                     Toast.makeText(addition.this, "Please input some value", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Double result = v1 + v2;
+                    result = v1 + v2;
                     Toast.makeText(addition.this, "result" + result, Toast.LENGTH_SHORT).show();
-                    finish();
                 }
+                finish();
             }
         });
     }
