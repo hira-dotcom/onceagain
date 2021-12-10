@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/cardview_shadow_end_color"
+    android:background="#14BB86FC"
     android:gravity="center"
     tools:context=".addition">
     <androidx.cardview.widget.CardView
@@ -65,6 +65,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/btn_finish"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/purple_200"
                     android:textColor="@color/white"

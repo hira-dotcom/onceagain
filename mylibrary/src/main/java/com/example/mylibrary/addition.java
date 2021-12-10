@@ -47,7 +47,13 @@ public class addition extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(addition.this, "result" + result, Toast.LENGTH_SHORT).show();
+                if(ed1.getText().toString().isEmpty() || ed2.getText().toString().isEmpty()){
+                Toast.makeText(addition.this, "There is nothing to show", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(addition.this, "result" + result, Toast.LENGTH_SHORT).show();
+
+                }
                 finish();
             }
         });
