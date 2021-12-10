@@ -25,9 +25,15 @@ public class addition extends AppCompatActivity {
                 Double v1,v2;
                 v1 = Double.valueOf(ed1.getText().toString());
                 v2 = Double.valueOf(ed2.getText().toString());
-                Double result = v1 + v2;
-                Toast.makeText(addition.this, "result"+ result, Toast.LENGTH_SHORT).show();
-                finish();
+                if(v1 == null && v2 == null){
+
+                    Toast.makeText(addition.this, "Please input some value", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Double result = v1 + v2;
+                    Toast.makeText(addition.this, "result" + result, Toast.LENGTH_SHORT).show();
+                    finish();
+                }
             }
         });
     }

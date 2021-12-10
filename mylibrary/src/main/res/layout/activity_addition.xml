@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg"
+    android:background="@color/cardview_light_background"
     android:gravity="center"
     tools:context=".addition">
     <androidx.cardview.widget.CardView
@@ -50,8 +50,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_sum"
                 android:layout_marginTop="10dp"
-                android:text="Addition"
-                android:background="@drawable/custom_bg"/>
+                android:text="Addition"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
