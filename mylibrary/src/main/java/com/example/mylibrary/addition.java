@@ -23,17 +23,17 @@ public class addition extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v1 = Double.valueOf(ed1.getText().toString());
-                v2 = Double.valueOf(ed2.getText().toString());
-                if(v1 == null && v2 == null){
+                if(ed1.getText().toString().isEmpty() || ed2.getText().toString().isEmpty()){
                     Toast.makeText(addition.this, "Please input some value", Toast.LENGTH_SHORT).show();
                 }
                 else {
+                    v1 = Double.valueOf(ed1.getText().toString());
+                    v2 = Double.valueOf(ed2.getText().toString());
                     result = v1 + v2;
                     Toast.makeText(addition.this, "result" + result, Toast.LENGTH_SHORT).show();
                 }
-                finish();
             }
         });
+        finish();
     }
 }
