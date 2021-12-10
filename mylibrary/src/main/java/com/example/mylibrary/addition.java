@@ -11,15 +11,24 @@ import android.widget.Toast;
 public class addition extends AppCompatActivity {
 
     EditText ed1,ed2;
-    Button btn;
+    Button btn,btn2;
     Double v1,v2,result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addition);
+        BindViews();
+        AllClickListener();
+    }
+
+    private void BindViews() {
         ed1 = findViewById(R.id.ed1);
         ed2 = findViewById(R.id.ed2);
         btn = findViewById(R.id.btn_sum);
+        btn2 = findViewById(R.id.btn_finish);
+    }
+
+    private void AllClickListener() {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,6 +43,13 @@ public class addition extends AppCompatActivity {
                 }
             }
         });
-        finish();
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(addition.this, "result" + result, Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
     }
 }
