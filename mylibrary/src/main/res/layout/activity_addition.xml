@@ -10,7 +10,7 @@
     tools:context=".addition">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -64,15 +64,58 @@
                 <Button
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/btn_finish"
+                    android:id="@+id/btn_div"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple_200"
+                    android:textColor="@color/white"
+                    android:text="Division"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_mul"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple_200"
+                    android:textColor="@color/white"
+                    android:text="Multiplication"/>
+
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_sub"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/purple_200"
+                    android:textColor="@color/white"
+                    android:text="Subtraction"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_finish"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/purple_200"
                     android:textColor="@color/white"
                     android:text="Finish"/>
 
-
             </LinearLayout>
+
+
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
